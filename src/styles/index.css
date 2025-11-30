@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+:root {
+    /* Color Palette */
+    --clr-primary: #37374f;       /* Indigo */
+    --clr-primary-dark: #4f46e5;
+    --clr-accent: #f59e0b;        /* Amber */
+    --clr-bg-sidebar: #f8fafc;    /* Light Grey */
+    --clr-bg-main: #9892a8;       /* White */
+    --clr-text-main: #1e293b;     /* Dark Slate */
+    --clr-text-muted: #64748b;    /* Grey Text */
+    --clr-border: #e2e8f0;
+    
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Story Script", sans-serif;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    color: var(--clr-text-main);
+    background-color: var(--clr-bg-main);
+}

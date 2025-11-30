@@ -1,0 +1,40 @@
+# 1. npm 依赖文件夹（必须忽略，体积最大）
+node_modules/
+
+# 2. Webpack 打包产物（可重新生成，无需提交）
+dist/
+build/  # 部分项目可能用 build 作为打包目录，也忽略
+
+# 3. npm 日志文件（报错时生成，无用）
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 4. 系统临时文件
+.DS_Store  # macOS 文件夹配置文件
+Thumbs.db  # Windows 缩略图缓存
+*.swp      # Vim 编辑器临时文件
+*.swo      # Vim 编辑器临时文件
+
+# 5. 编辑器配置文件（本地环境，不共享）
+.vscode/
+.idea/     # WebStorm 等 JetBrains 编辑器配置
+*.suo      # Visual Studio 配置文件
+*.ntvs*    # Visual Studio 相关文件
+
+# 6. 缓存文件
+.cache/
+.eslintcache  # ESLint 缓存
+.stylelintcache  # StyleLint 缓存
+
+# 7. 环境变量文件（如果后续用 .env 存密钥，必须忽略！）
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# 注意：以下文件需要保留，不要忽略！
+# package.json：项目依赖和脚本配置，必须提交
+# package-lock.json：锁定依赖版本，必须提交
+# webpack.config.js：Webpack 配置，必须提交
+# src/ 和 public/：你的源码，必须提交
