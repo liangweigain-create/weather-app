@@ -50,11 +50,12 @@ export function renderWeatherToday(weatherData, domEl) {
 export function renderWeatherCurrent(weatherData, domEl) {
     try {
         if (!weatherData?.currentConditions) throw new Error('当前天气缺失');
-
+        console.log(weatherData.currentConditions.dateTime)
+        const fulldateTimeStr = `${new Date().toISOString().split('T')[0]} ${weatherData.currentConditions.dateTime}`;
         const dateTimeEl = createElementWithContent(
             'h2',
             'dateTime',
-            format(weatherData.currentConditions.dateTime, 'a h:mm', { locale: zhCN })
+            format(new Date(fulldateTimeStr), 'a h:mm', { locale: zhCN })
         )
 
         const currentTempEl = createElementWithContent(
