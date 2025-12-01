@@ -1,1 +1,2 @@
-console.log('template working!')
+import { getWeather } from "./modules/getWeather.js";
+
