@@ -5,7 +5,7 @@ export  async function fetchData(baseUrl, params = {}) {
         const urlObj = new URL(baseUrl);
         //通过传入的params，安全的自动设置url对象的search属性,search setter需要字符串作为参数
         urlObj.search = new URLSearchParams(params).toString();
-
+        
         console.log('fetching data from: ', urlObj.toString());
 
         const response = await fetch(urlObj);//fetch函数接受字符串url或是url对象，这里我们直接传入url对象也是可以的

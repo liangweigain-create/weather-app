@@ -7,6 +7,7 @@ export async function getWeather(location) {
         key: CONFIG.WEATHER.API_KEY,//键为key因为visual crossing API DOC中说了参数apikey是key=
         //地点参数不传入params中，因为APIDOC中明确了地点search需要跟在base url后面
     }
+    console.log(params);
     const baseUrl = `${CONFIG.WEATHER.BASE_URL}${location}`;
     console.log(`Calling fetchData with baseUrl: ${baseUrl}`);
 
